@@ -9,3 +9,6 @@ You need to export
 - OPENAI_API_URL
 
 or CHATGPT_KEY
+
+
+Then run `export $(grep -v '^#' .env | xargs); TOKENIZERS_PARALLELISM=true python3.12 ./mistal_api.py PATH_TO_PKG_FOLDER`
